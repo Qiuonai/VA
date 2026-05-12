@@ -254,6 +254,20 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Final CTA Section */}
+      <section className="py-24 px-6">
+        <div className="max-w-5xl mx-auto bg-blue-600 rounded-[3rem] p-12 md:p-20 text-center text-white relative overflow-hidden">
+          <div className="relative z-10">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 italic">Ready to reclaim 20+ hours a week?</h2>
+            <p className="text-blue-100 text-lg mb-10 max-w-xl mx-auto">Join founders from top tech companies who have offloaded their operations to VirtuaFlow.</p>
+            <button className="bg-white text-blue-600 px-10 py-4 rounded-2xl font-bold text-lg hover:bg-blue-50 transition-all active:scale-95 shadow-xl">
+              Book Your Free Audit
+            </button>
+          </div>
+          {/* Decorative Circle */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="max-w-7xl mx-auto px-6 py-20 border-t border-slate-100">
