@@ -126,6 +126,44 @@ export default function Home() {
           </div>
         </div>
       </section>
+      {/* Process Section */}
+      <section id="how-it-works" className="py-32 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-20">
+            <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4 text-slate-900">How we get you your time back.</h2>
+            <p className="text-slate-500 text-lg max-w-xl mx-auto">Three simple steps to scaling your output without increasing your workload.</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-12 relative">
+            {/* Step 1 */}
+            <div className="relative z-10 bg-white p-10 rounded-3xl border border-slate-200/60 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-bold text-xl mb-6 shadow-lg shadow-blue-200">1</div>
+              <h3 className="text-xl font-bold mb-4">Efficiency Audit</h3>
+              <p className="text-slate-500 leading-relaxed">
+                We hop on a 15-minute call to identify the recurring tasks that are draining your energy and blocking your growth.
+              </p>
+            </div>
+
+            {/* Step 2 */}
+            <div className="relative z-10 bg-white p-10 rounded-3xl border border-slate-200/60 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-bold text-xl mb-6 shadow-lg shadow-blue-200">2</div>
+              <h3 className="text-xl font-bold mb-4">Elite Matching</h3>
+              <p className="text-slate-500 leading-relaxed">
+                We pair you with a VA from our top 1% talent pool who has specific experience in your industry and toolstack.
+              </p>
+            </div>
+
+            {/* Step 3 */}
+            <div className="relative z-10 bg-white p-10 rounded-3xl border border-slate-200/60 shadow-sm hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-bold text-xl mb-6 shadow-lg shadow-blue-200">3</div>
+              <h3 className="text-xl font-bold mb-4">Seamless Handoff</h3>
+              <p className="text-slate-500 leading-relaxed">
+                Your new VA integrates into your Slack/Notion and starts taking over tasks on day one. You just watch the progress.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Features/Stats Section */}
       <section className="bg-slate-900 py-32 rounded-[3rem] mx-4 mb-32 overflow-hidden relative">
