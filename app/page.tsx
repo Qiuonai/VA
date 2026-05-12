@@ -263,6 +263,7 @@ export default function Home() {
             <button className="bg-white text-blue-600 px-10 py-4 rounded-2xl font-bold text-lg hover:bg-blue-50 transition-all active:scale-95 shadow-xl">
               Book Your Free Audit
             </button>
+            <p className="text-white-100 text-lg mb-10 max-w-xl mx-auto"> Free Consultation. 15 Minutes </p>
           </div>
           {/* Decorative Circle */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
