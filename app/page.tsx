@@ -208,6 +208,52 @@ export default function Home() {
         </div>
         <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-blue-600/10 to-transparent"></div>
       </section>
+      {/* Pricing Section */}
+      <section id="pricing" className="py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold mb-4">Simple, transparent pricing.</h2>
+          <p className="text-slate-500 mb-16">No hidden fees. No long-term contracts. Just elite support.</p>
+          
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Starter Plan */}
+            <div className="p-8 rounded-3xl border border-slate-100 text-left hover:border-blue-200 transition-all">
+              <h3 className="font-bold text-lg mb-2">Growth</h3>
+              <div className="text-4xl font-bold mb-6">$800<span className="text-sm text-slate-400 font-normal">/mo</span></div>
+              <ul className="space-y-4 mb-8 text-sm text-slate-600">
+                <li className="flex items-center gap-2">✅ 20 hours of support/mo</li>
+                <li className="flex items-center gap-2">✅ Dedicated VA Match</li>
+                <li className="flex items-center gap-2">✅ Daily Updates</li>
+              </ul>
+              <button className="w-full py-3 rounded-xl border border-slate-200 font-bold hover:bg-slate-50 transition-colors">Get Started</button>
+            </div>
+
+            {/* Scale Plan (Recommended) */}
+            <div className="p-8 rounded-3xl border-2 border-blue-600 text-left relative shadow-xl shadow-blue-50">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-blue-600 text-white px-4 py-1 rounded-full text-xs font-bold">MOST POPULAR</div>
+              <h3 className="font-bold text-lg mb-2">Scale</h3>
+              <div className="text-4xl font-bold mb-6">$1,500<span className="text-sm text-slate-400 font-normal">/mo</span></div>
+              <ul className="space-y-4 mb-8 text-sm text-slate-600">
+                <li className="flex items-center gap-2 font-bold text-slate-900">✅ 40 hours of support/mo</li>
+                <li className="flex items-center gap-2">✅ Priority Response Time</li>
+                <li className="flex items-center gap-2">✅ Advanced Technical Ops</li>
+              </ul>
+              <button className="w-full py-3 rounded-xl bg-blue-600 text-white font-bold hover:bg-blue-700 transition-colors">Get Started</button>
+            </div>
+
+            {/* Custom Plan */}
+            <div className="p-8 rounded-3xl border border-slate-100 text-left hover:border-blue-200 transition-all">
+              <h3 className="font-bold text-lg mb-2">Enterprise</h3>
+              <div className="text-4xl font-bold mb-6">Custom</div>
+              <ul className="space-y-4 mb-8 text-sm text-slate-600">
+                <li className="flex items-center gap-2">✅ Full-time Dedicated VA</li>
+                <li className="flex items-center gap-2">✅ Custom Workflow Setup</li>
+                <li className="flex items-center gap-2">✅ Quarterly Strategy Calls</li>
+              </ul>
+              <button className="w-full py-3 rounded-xl border border-slate-200 font-bold hover:bg-slate-50 transition-colors">Contact Sales</button>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="max-w-7xl mx-auto px-6 py-20 border-t border-slate-100">
