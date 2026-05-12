@@ -260,9 +260,23 @@ export default function Home() {
           <div className="relative z-10">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 italic">Ready to reclaim 20+ hours a week?</h2>
             <p className="text-blue-100 text-lg mb-10 max-w-xl mx-auto">Join founders from top tech companies who have offloaded their operations to VirtuaFlow.</p>
-            <button className="bg-white text-blue-600 px-10 py-4 rounded-2xl font-bold text-lg hover:bg-blue-50 transition-all active:scale-95 shadow-xl">
-              Book Your Free Audit
-            </button>
+            <section id="book-now" className="py-24 bg-white">
+  <div className="max-w-4xl mx-auto px-6">
+    <div className="text-center mb-12">
+      <h2 className="text-4xl font-bold mb-4 text-slate-900 font-serif">Secure your slot.</h2>
+      <p className="text-slate-500">Pick a time that works for you. No back-and-forth emails required.</p>
+    </div>
+    
+    {/* The zcal Embed Container */}
+    <div className="rounded-3xl border border-slate-100 shadow-2xl overflow-hidden bg-slate-50 min-h-[600px]">
+      <iframe 
+        src="https://zcal.co/ecoscribe/15min?embed=1" 
+        loading="lazy" 
+        style={{ width: '100%', height: '700px', border: 'none' }}
+      />
+    </div>
+  </div>
+</section>
             <p className="text-white-100 text-lg mb-10 max-w-xl mx-auto"> Free Consultation. 15 Minutes </p>
           </div>
           {/* Decorative Circle */}
