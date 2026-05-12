@@ -258,27 +258,31 @@ export default function Home() {
       <section className="py-24 px-6">
         <div className="max-w-5xl mx-auto bg-blue-600 rounded-[3rem] p-12 md:p-20 text-center text-white relative overflow-hidden">
           <div className="relative z-10">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 italic">Ready to reclaim 20+ hours a week?</h2>
-            <p className="text-blue-100 text-lg mb-10 max-w-xl mx-auto">Join founders from top tech companies who have offloaded their operations to VirtuaFlow.</p>
-            <section id="book-now" className="py-24 bg-white">
-  <div className="max-w-4xl mx-auto px-6">
-    <div className="text-center mb-12">
-      <h2 className="text-4xl font-bold mb-4 text-slate-900 font-serif">Secure your slot.</h2>
-      <p className="text-slate-500">Pick a time that works for you. No back-and-forth emails required.</p>
-    </div>
-    {/* Booking Section */}
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 italic tracking-tight">
+              Ready to reclaim 20+ hours a week?
+            </h2>
+            <p className="text-blue-100 text-lg mb-0 max-w-xl mx-auto">
+              Join founders from top tech companies who have offloaded their operations to VirtuaFlow. 
+              Scroll down to secure your consultation instantly.
+            </p>
+          </div>
+          {/* Decorative Background Element */}
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
+        </div>
+      </section>
+
+      {/* Booking Embed Section */}
       <section id="book-now" className="py-24 bg-slate-50">
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold mb-4 text-slate-900 tracking-tight">
-              Ready to start? <span className="text-blue-600">Pick a time.</span>
+              Secure your slot. <span className="text-blue-600">Pick a time.</span>
             </h2>
-            <p className="text-slate-500 text-lg">No forms. No wait times. Just a direct line to our team.</p>
+            <p className="text-slate-500 text-lg">No back-and-forth emails. No forms. Just a direct line to our team.</p>
           </div>
           
           {/* The Embed Container */}
-          <div className="rounded-[2.5rem] border border-slate-200 bg-white shadow-2xl shadow-blue-100/50 overflow-hidden min-h-[700px] relative">
-            {/* Loading Indicator (Shows while zcal is fetching) */}
+          <div className="rounded-[2.5rem] border border-slate-200 bg-white shadow-2xl shadow-blue-100/50 overflow-hidden min-h-[750px] relative">
             <div className="absolute inset-0 flex items-center justify-center -z-0 text-slate-300 font-medium">
               Loading calendar...
             </div>
@@ -293,13 +297,7 @@ export default function Home() {
         </div>
       </section>
     
-            <p className="text-white-100 text-lg mb-10 max-w-xl mx-auto"> Free Consultation. 15 Minutes </p>
-          </div>
-          {/* Decorative Circle */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
-        </div>
-      </section>
-
+        
       {/* Footer */}
       <footer className="max-w-7xl mx-auto px-6 py-20 border-t border-slate-100">
         <div className="flex flex-col md:flex-row justify-between gap-12">
