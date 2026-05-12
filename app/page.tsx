@@ -270,37 +270,50 @@ export default function Home() {
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
         </div>
       </section>
-
-      {/* Booking Embed Section */}
-      <section id="book-now" className="py-12 md:py-24 bg-slate-50">
-        <div className="max-w-4xl mx-auto px-4 md:px-6">
-          <div className="text-center mb-10">
+{/* Booking Embed Section */}
+      <section id="book-now" className="py-20 md:py-32 bg-slate-50">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="text-center mb-12">
             <h2 className="text-3xl md:text-5xl font-bold mb-4 text-slate-900 tracking-tight">
               Secure your slot. <span className="text-blue-600">Pick a time.</span>
             </h2>
-            <p className="text-slate-500 text-base md:text-lg">No back-and-forth emails. Just a direct line to our team.</p>
+            <p className="text-slate-500 text-lg">No back-and-forth emails. Just a direct line to our team.</p>
           </div>
           
-          {/* The Responsive Embed Container */}
-          <div className="rounded-2xl md:rounded-[2.5rem] border border-slate-200 bg-white shadow-2xl shadow-blue-100/50 overflow-hidden relative">
-            {/* Aspect ratio box keeps it from collapsing on small screens */}
-            <div className="w-full h-[600px] md:h-[750px]">
-              <iframe 
-                src="https://zcal.co/i/JRqUf9_T?embed=1" 
-                loading="lazy" 
-                className="w-full h-full border-none"
-                title="Schedule a meeting"
-              />
+          {/* DESKTOP VIEW: Clean Embed */}
+          <div className="hidden md:block rounded-[2.5rem] border border-slate-200 bg-white shadow-2xl shadow-blue-100/50 overflow-hidden min-h-[750px] relative">
+            <iframe 
+              src="https://zcal.co/i/JRqUf9_T?embed=1" 
+              loading="lazy" 
+              className="w-full h-[750px] border-none"
+              title="Schedule a meeting"
+            />
+          </div>
+
+          {/* MOBILE VIEW: High-Conversion CTA Card */}
+          <div className="md:hidden bg-white rounded-3xl p-8 border border-slate-200 shadow-xl text-center">
+            <div className="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
+              <Calendar className="w-8 h-8" />
             </div>
+            <h3 className="text-xl font-bold mb-3 text-slate-900">Book your 15-min discovery call</h3>
+            <p className="text-slate-500 text-sm mb-8 leading-relaxed">
+              To give you the best booking experience on mobile, we'll open our calendar in a new, secure tab.
+            </p>
+            <a 
+              href="https://zcal.co/i/JRqUf9_T" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block w-full bg-blue-600 text-white py-5 rounded-2xl font-bold text-lg shadow-lg shadow-blue-200 active:scale-95 transition-all"
+            >
+              Open Calendar
+            </a>
+            <p className="mt-4 text-[10px] uppercase tracking-widest text-slate-400 font-semibold">
+              Fast • Secure • Easy
+            </p>
           </div>
-          
-          <p className="text-center mt-6 text-sm text-slate-400 md:hidden">
-            Tip: Scroll inside the box to see all available times.
-          </p>
         </div>
       </section>
-    
-        
+      
       {/* Footer */}
       <footer className="max-w-7xl mx-auto px-6 py-20 border-t border-slate-100">
         <div className="flex flex-col md:flex-row justify-between gap-12">
