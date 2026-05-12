@@ -266,17 +266,33 @@ export default function Home() {
       <h2 className="text-4xl font-bold mb-4 text-slate-900 font-serif">Secure your slot.</h2>
       <p className="text-slate-500">Pick a time that works for you. No back-and-forth emails required.</p>
     </div>
+    {/* Booking Section */}
+      <section id="book-now" className="py-24 bg-slate-50">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-slate-900 tracking-tight">
+              Ready to start? <span className="text-blue-600">Pick a time.</span>
+            </h2>
+            <p className="text-slate-500 text-lg">No forms. No wait times. Just a direct line to our team.</p>
+          </div>
+          
+          {/* The Embed Container */}
+          <div className="rounded-[2.5rem] border border-slate-200 bg-white shadow-2xl shadow-blue-100/50 overflow-hidden min-h-[700px] relative">
+            {/* Loading Indicator (Shows while zcal is fetching) */}
+            <div className="absolute inset-0 flex items-center justify-center -z-0 text-slate-300 font-medium">
+              Loading calendar...
+            </div>
+            
+            <iframe 
+              src="https://zcal.co/i/JRqUf9_T?embed=1" 
+              loading="lazy" 
+              className="w-full h-[750px] relative z-10 border-none"
+              title="Schedule a meeting"
+            />
+          </div>
+        </div>
+      </section>
     
-    {/* The zcal Embed Container */}
-    <div className="rounded-3xl border border-slate-100 shadow-2xl overflow-hidden bg-slate-50 min-h-[600px]">
-      <iframe 
-        src="https://zcal.co/ecoscribe/15min?embed=1" 
-        loading="lazy" 
-        style={{ width: '100%', height: '700px', border: 'none' }}
-      />
-    </div>
-  </div>
-</section>
             <p className="text-white-100 text-lg mb-10 max-w-xl mx-auto"> Free Consultation. 15 Minutes </p>
           </div>
           {/* Decorative Circle */}
