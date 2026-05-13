@@ -29,9 +29,14 @@ export default function Home() {
             <a href="#how-it-works" className="hover:text-blue-600 transition-colors">Process</a>
             <a href="#pricing" className="hover:text-blue-600 transition-colors">Pricing</a>
           </div>
-          <button className="bg-slate-900 text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-slate-800 transition-all active:scale-95 shadow-sm">
+          <a 
+            href="https://zcal.co/i/JRqUf9_T"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-slate-900 text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-slate-800 transition-all active:scale-95 shadow-sm inline-block"
+          >
             Book a Call
-          </button>
+          </a>
         </div>
       </nav>
 
