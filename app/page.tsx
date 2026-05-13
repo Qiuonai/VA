@@ -258,46 +258,28 @@ export default function Home() {
       <section className="py-24 px-6">
         <div className="max-w-5xl mx-auto bg-blue-600 rounded-[3rem] p-12 md:p-20 text-center text-white relative overflow-hidden">
           <div className="relative z-10">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 italic tracking-tight">
-              Ready to reclaim 20+ hours a week?
-            </h2>
-            <p className="text-blue-100 text-lg mb-0 max-w-xl mx-auto">
-              Join founders from top tech companies who have offloaded their operations to VirtuaFlow. 
-              Scroll down to secure your consultation instantly.
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 italic">Ready to reclaim 20+ hours a week?</h2>
+            <p className="text-blue-100 text-lg mb-10 max-w-xl mx-auto">Join founders from top tech companies who have offloaded their operations to VirtuaFlow.</p>
+            
+            {/* The Link Button */}
+            <a 
+              href="https://zcal.co/i/JRqUf9_T" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block bg-white text-blue-600 px-10 py-4 rounded-2xl font-bold text-lg hover:bg-blue-50 transition-all active:scale-95 shadow-xl mb-6"
+            >
+              Book Your Free Audit
+            </a>
+
+            <p className="text-blue-100/80 text-sm md:text-lg max-w-xl mx-auto">
+              Free Consultation • 15 minutes 
             </p>
           </div>
-          {/* Decorative Background Element */}
+          {/* Decorative Circle */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
         </div>
       </section>
-      {/* Booking Section */}
-      <section id="book-now" className="py-20 bg-slate-50">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4 text-slate-900 tracking-tight">
-              Secure your slot. <span className="text-blue-600">Pick a time.</span>
-            </h2>
-            <p className="text-slate-500">Fast, secure, and direct. No back-and-forth required.</p>
-          </div>
-          
-          {/* THE FIX: We use w-full (100%) instead of 512px */}
-          <div className="rounded-[2rem] border border-slate-200 bg-white shadow-2xl overflow-hidden min-h-[600px] md:min-h-[814px]">
-            <iframe 
-              src="https://zcal.co/i/JRqUf9_T?embed=1&embedType=iframe" 
-              loading="lazy" 
-              id="zcal-invite"
-              scrolling="no"
-              className="w-full h-[600px] md:h-[814px] border-none"
-              style={{ width: '100%', border: 'none' }} 
-              title="Schedule a meeting"
-            />
-          </div>
-          
-          <p className="text-center mt-6 text-xs text-slate-400">
-            Secure booking powered by zcal
-          </p>
-        </div>
-      </section>
+      
       {/* Footer */}
       <footer className="max-w-7xl mx-auto px-6 py-20 border-t border-slate-100">
         <div className="flex flex-col md:flex-row justify-between gap-12">
